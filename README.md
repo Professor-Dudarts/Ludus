@@ -11,3 +11,11 @@ Repositório destinado à disciplina de Tópicos Avançados em Sistemas de Infor
 
 BFF
 - API para integração dos microserviços.
+
+## Board do Projeto
+
+[Jira - Ludus](https://professordudarts.atlassian.net/jira/software/projects/LDS/boards/4)
+
+## Documentação
+
+[Confluence](https://professordudarts.atlassian.net/jira/software/projects/LDS/pages)
