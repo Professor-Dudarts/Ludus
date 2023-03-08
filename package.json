@@ -1,0 +1,13 @@
+{
+    "name": "ludus_api",
+    "version": "1.0.0",
+    "description": "Node.js on Docker",
+    "author": "Prof. Dudarts <mendes.eduardo@acad.unasp.edu.br>",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1"
+    }
+  }
