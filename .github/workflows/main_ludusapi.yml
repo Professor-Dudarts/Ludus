@@ -45,6 +45,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
+        context: .
         app-name: 'ludusapi'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_bec6090238654d47b89a378a71e68372 }}
