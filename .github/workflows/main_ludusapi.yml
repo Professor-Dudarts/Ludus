@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: https://luduscontainerregistry.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_c02b137fb22244e4b20d9eeffa2b6c83 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_0ea0652039984e9c9268a62d64b14efe }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_36c071da977547c3b9d539604a9a15a0 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_438c72add25844b0a277f43c90b4ae93 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: luduscontainerregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_c02b137fb22244e4b20d9eeffa2b6c83 }}/ludus-api:${{ github.sha }}
+        tags: luduscontainerregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_36c071da977547c3b9d539604a9a15a0 }}/ludus-api:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'ludusapi'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_868f462b9ef04875b5ef9f5df9f9cd28 }}
-        images: 'luduscontainerregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_c02b137fb22244e4b20d9eeffa2b6c83 }}/ludus-api:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_054a750bc31b4e09852623a5910ea88c }}
+        images: 'luduscontainerregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_36c071da977547c3b9d539604a9a15a0 }}/ludus-api:${{ github.sha }}'
