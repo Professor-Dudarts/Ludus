@@ -14,8 +14,8 @@ BFF
 
 ## Board do Projeto
 
-[Jira - Ludus](https://professordudarts.atlassian.net/jira/software/projects/LDS/boards/4)
+[Projeto Ludus API](https://github.com/orgs/Professor-Dudarts/projects/1/views/1)
 
 ## Documentação
 
-[Confluence](https://professordudarts.atlassian.net/jira/software/projects/LDS/pages)
+Utilize o Read.me para documentar tudo sobre o projeto.
