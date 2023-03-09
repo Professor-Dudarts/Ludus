@@ -16,6 +16,10 @@ app.get('/rota', (req, res) => {
   res.send('Testando a rota "Rota"');
 });
 
+app.get('/oxe', (req, res) => {
+  res.send('oxe oxe oxe, aqui é barril!');
+});
+
 app.listen(PORT, HOST, () => {
   console.log(`Running on http://${HOST}:${PORT}`);
 });
