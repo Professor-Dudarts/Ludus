@@ -20,6 +20,10 @@ app.get('/oxe', (req, res) => {
   res.send('oxe oxe oxe, aqui é barril!');
 });
 
+app.get('/barril', (req, res) => {
+  res.send('Barril dobrado');
+});
+
 app.listen(PORT, HOST, () => {
   console.log(`Running on http://${HOST}:${PORT}`);
 });
